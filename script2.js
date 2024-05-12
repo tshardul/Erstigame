@@ -68,13 +68,26 @@ function checkAnswer(event) {
 
 function showResult(message) {
     const resultDiv = document.getElementById('result');
+    const rightSound = document.getElementById('right-sound')
+    const wrongSound = document.getElementById('wrong-sound')
+
+    if (message != "WRONG, Drink up!!"){
+        rightSound.play();
+
+    }
+    else {
+        wrongSound.play();
+    }
     resultDiv.textContent = message;
     resultDiv.style.display = 'flex'; 
     if (message != "WRONG, Drink up!!"){
         resultDiv.style.backgroundColor = 'rgba(0, 255, 0, 0.8)';
+        
+
     }
     else {
         resultDiv.style.backgroundColor = 'rgba(255,0,0,0.8)';
+        
     }
 
     setTimeout(function() {
@@ -90,6 +103,8 @@ function startGame() {
 
 function playVideo() {
     const videoContainer = document.getElementById('video-container');
+    const sideimg1 = document.getElementById('img1')
+    const sideimg2 = document.getElementById('img2')
     const videoPlayer = document.createElement('video');
     videoPlayer.src = 'assets/intro2.mp4'; // Replace 'your-video-url.mp4' with your video URL
     videoPlayer.controls = false;
@@ -110,6 +125,8 @@ function playVideo() {
 
     videoPlayer.addEventListener('ended', function() {
         videoContainer.style.display = 'none';
+        sideimg1.style.display = 'flex';
+        sideimg2.style.display = 'flex';
         startGame();
     });
    

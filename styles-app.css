@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 800px;
     margin: 50px auto;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.6);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black; /* Optional: Set background color */
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,6 +123,35 @@ li {
 .image-logo img {
     max-width: 100%; /* Ensure the image doesn't exceed its container */
     max-height: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+.img-container {
+    position: relative;
+    width: 100%; /* Adjust this according to your layout */
+    height: 100vh; /* Adjust this according to your layout */
+    overflow: hidden; /* Prevents the image from overflowing */
+}
+
+#img1 {
+    width: 350px; /* Adjust width as needed */
+    height: 693px; 
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    left: 1230px; /* Adjust as needed */
+    z-index: 999; /* Ensure the image stays on top of other content */
+    /* Add any other styling you want for the image */
+    display: none;
+}
+
+#img2 {
+    width: 300px; /* Adjust width as needed */
+    height: auto; 
+    position: absolute;
+    top: 190px; /* Adjust as needed */
+    left: 50px; /* Adjust as needed */
+    z-index: 999; /* Ensure the image stays on top of other content */
+    /* Add any other styling you want for the image */
+    display: none;
 }
 
 

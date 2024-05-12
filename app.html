@@ -13,6 +13,9 @@
             <p></p>
         </div>
     </div>
+    <img id="img1" src="assets/img1.jpg" alt="">
+    <img id="img2" src="assets/img2.jpg" alt="">
+     
     <div class="container" id="game-container" style="display: none;">
         <div id="result">
             <video id="result-video" controls></video>
@@ -24,11 +27,20 @@
             </a>    
         </div>
         <div class="question">
+            <audio id="right-sound">
+                <source src="assets/correct.mp3" type="audio/mp3">
+                <!-- Add additional source elements for different audio formats if needed -->
+            </audio>
+            <audio id="wrong-sound">
+                <source src="assets/wrong.mp3" type="audio/mp3">
+                <!-- Add additional source elements for different audio formats if needed -->
+            </audio>
             <h2 id="question-text">Question goes here</h2>
             <ul id="options-list">
                 <!-- Options will be populated dynamically with JavaScript -->
-            </ul>
+            </ul>            
         </div>
+        
         
     </div>
     <script src="script2.js"></script>

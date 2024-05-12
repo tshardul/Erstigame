@@ -3,13 +3,16 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1b2b34;
+    background-image: url('assets/bg.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     color: #fff;
 }
 
 
 header {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     text-align: center;
 }
@@ -41,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #293268;    
+    color: yellow;    
 }
 
 main {
@@ -95,6 +98,10 @@ title {
     margin-top: 40px;
 }
 
+.rule-content p:hover {
+    color: yellow;
+}
+
 .rules-list {
     text-align: center;
 }
@@ -115,6 +122,12 @@ title {
 .rule {
     cursor:pointer;
     text-align: center;
+    font-size: larger;
+    transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+.rule:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
 }
 
 .home-logo {
@@ -125,4 +138,12 @@ title {
 
 .hidden {
     display: none;
+  }
+
+  #rules-link {
+    transition: transform 0.2s ease;
+  }
+
+  #rules-link:hover {
+    transform: scale(1.1);
   }
