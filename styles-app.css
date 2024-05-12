@@ -1,0 +1,137 @@
+body {
+    font-family: 'BIZ UDPGothic';
+    background-image: url('assets/bg.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Optional: Set background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#video-overlay p {
+    text-align: center;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.question {
+    margin-bottom: 20px;
+    color: white;
+    background-color: #293268    ; /* Dark background color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+}
+
+.option {
+    background-color: #444; /* Darker background color */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.option:hover {
+    background-color: #666; /* Dark background color on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#result {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(122, 6, 6, 0.8); /* Semi-transparent background */
+    color: #fff;
+    display: none; /* Hide the resultDiv initially */
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 9999; /* Ensure it appears on top of other elements */
+}
+
+.image-logo {
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
+     /* Assuming you want the image to take the full height of the viewport */
+}
+
+.image-logo img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+
+.flash {
+    animation: flash 0.5s;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

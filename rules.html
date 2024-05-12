@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=BIZ UDPGothic' rel='stylesheet'>
+    <title>&#129446 Rules</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body style="background-color: black;">
+    <div class="home-logo-container">
+        <a href="index.html"> 
+            <img class="home-logo" src="assets/logo,webp.webp" alt="Logo"> 
+        </a>
+    </div>
+    <div class="rules-container" style="background-image: url(assets/bg.jpeg);background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;">
+        <div class="rules-content">
+            <br>
+            <h1>Commandments</h1>
+            <br>
+            <ul class="rules-list">
+                <li class="rule" onclick="toggleRule(this)">Rule 1: Lifelines</li>
+                <div class="rule-content hidden">
+                  <p>There are no lifelines. Tough luck!</p>
+                </div>
+                <br>
+                <li class="rule" onclick="toggleRule(this)">Rule 2: What do you win on guessing correctly?</li>
+                <div class="rule-content hidden">
+                  <p>Not money, the Stockwerkskasse can't support it </p>
+                    <p> We got some sweet chocolate though!</p>
+                </div>
+                <br>
+                <li class="rule" onclick="toggleRule(this)">Rule 3: What if you guess wrong?</li>
+                <div class="rule-content hidden">
+                  <p>Dont worry, you wont lose completely like the original game.</p>
+                  <p>Instead, you have to drink :)</p>
+                </div>
+              </ul>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

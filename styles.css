@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b2b34;
+    color: #fff;
+}
+
+
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'BIZ UDPGothic';
+    font-size: 36px;
+    margin: 0;
+    color: #fff; /* Gold color */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-family: 'BIZ UDPGothic';
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Gold color */
+    font-size: 18px;
+    transition: color 0.3s, ease; 
+    
+}
+
+nav ul li a:hover {
+    color: #293268;    
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #0c1c24;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+title {
+    font-family: 'BIZ UDPGothic';
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 70vh; /* Adjust the height of the container */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.rules-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 85vh; /* Adjust as needed */
+    font-family: 'BIZ UDPGothic';
+
+}
+
+.rules-content {
+    max-width: 20000px; /* Adjust as needed */
+    text-align: center;
+    font-family: 'BIZ UDPGothic';
+}
+
+.rules-content h1 {
+    margin-top: 40px;
+}
+
+.rules-list {
+    text-align: center;
+}
+
+.rules-list li {
+    margin-bottom: 10px;
+    list-style-type: none
+}
+
+.rules-content p {
+    color: yellow;
+}
+
+.home-logo-container {
+    text-align: center;
+}
+
+.rule {
+    cursor:pointer;
+    text-align: center;
+}
+
+.home-logo {
+    height: 15vh;
+    display: block;
+    margin: 0 auto;    
+}
+
+.hidden {
+    display: none;
+  }
