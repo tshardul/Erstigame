@@ -1,15 +1,99 @@
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["A. Paris", "B. London", "C. Berlin", "D. Rome"],
-        answer: "A. Paris"
+        question: "In true German fashion, whose bike was stolen after 5 days of it being bought?",
+        options: ["A. Maria", "B. Julius", "C. Shardul", "D. Hannah"],
+        answer: "A. Maria"
     },
     {
-        question: "Question 2?",
-        options: ["A. 1", "B. 2", "C. 3","D. 4"],
-        answer: "B. 2"
-    }
-    // Add more questions here
+        question: "Whose grandfather had only 13 siblings?",
+        options: ["A. Shardul", "B. Hannah", "C. Maria","D. Julius"],
+        answer: "D. Julius"
+    },
+    {
+        question: "Trams and buses are this person's natural enemies, as they always seem to fall in them:",
+        options: ["A. Hannah", "B. Julius", "C. Shardul","D. Maria"],
+        answer: "C. Shardul"
+    },
+    {
+        question: "Whose mother bought her own German citizenship for the meager price of 100 mark at the age of 15?",
+        options: ["A. Julius", "B. Hannah", "C. Maria","D. Shardul"],
+        answer: "A. Julius"
+    },
+    {
+        question: "Who had to pick up their phone from the police two times? Yes, it was the same phone.",
+        options: ["A. Maria", "B. Shardul", "C. Julius","D. Hannah"],
+        answer: "D. Hannah"
+    },
+    {
+        question: "Who is also known as the chicken slayer? They have killed 10 chickens (so far).",
+        options: ["A. Hannah", "B. Maria", "C. Julius","D. Shardul"],
+        answer: "B. Maria"
+    },
+    {
+        question: "This person really likes the sea. So much that they lost their car keys in the sea once.",
+        options: ["A. Shardul", "B. Maria", "C. Hannah","D. Julius"],
+        answer: "C. Hannah"
+    },
+    {
+        question: "Who was their city's slow cycling champion?",
+        options: ["A. Maria", "B. Shardul", "C. Julius","D. Hannah"],
+        answer: "B. Shardul"
+    },
+    {
+        question: "This person loves hiking. So much so that they have hiked for 24 hours straight once.",
+        options: ["A. Julius", "B. Shardul", "C. Maria","D. Hannah"],
+        answer: "A. Julius"
+    },
+    {
+        question: "This person makes migratory birds' lives look stable, as they have moved 10 times in less than 5 years",
+        options: ["A. Julius", "B. Shardul", "C. Hannah","D. Maria"],
+        answer: "D. Maria"
+    },
+    {
+        question: "Who has a cat named Krümel?",
+        options: ["A. Shardul", "B. Maria", "C. Julius","D. Hannah"],
+        answer: "D. Hannah"
+    },
+    {
+        question: "This person was on the Panamanian news a few years ago. Was it related to the Panama Papers? We can't legally disclose that",
+        options: ["A. Maria", "B. Hannah", "C. Julius","D. Shardul"],
+        answer: "C. Julius"
+    },
+    {
+        question: "Who once lost a quiz because they couldn't name the most famous and longest river in their nation?",
+        options: ["A. Maria", "B. Julius", "C. Shardul","D. Hannah"],
+        answer: "C. Shardul"
+    },
+    {
+        question: "This maus is definitely on the correct floor, because they had mice in their house.",
+        options: ["A. Julius", "B. Maria", "C. Shardul","D. Hannah"],
+        answer: "B. Maria"
+    },
+    {
+        question: "Who has never been defeated so far in bowling? (probably will change at the upcoming floor excursion)",
+        options: ["A. Shardul", "B. Maria", "C. Julius","D. Hannah"],
+        answer: "A. Shardul"
+    },
+    {
+        question: "Everyone loses their self control a little bit when they drink. But this person has lost even more. Their glasses. Twice.",
+        options: ["A. Maria", "B. Shardul", "C. Hannah","D. Julius"],
+        answer: "D. Julius"
+    },
+    {
+        question: "The first thing this person saw when they entered the highway in their driver's exam was a wrong-way driver coming right at them.",
+        options: ["A. Hannah", "B. Julius", "C. Shardul","D. Maria"],
+        answer: "D. Maria"
+    },
+    {
+        question: "This person was once interviewed by the media, and is on record saying they want to be a soldier when they grew up. They can't recall saying it.",
+        options: ["A. Hannah", "B. Shardul", "C. Julius","D. Maria"],
+        answer: "B. Shardul"
+    },
+    {
+        question: "Whose favorite color is red?",
+        options: ["A. Julius", "B. Shardul", "C. Hannah","D. Maria"],
+        answer: "C. Hannah"
+    },
 ];
 
 let currentQuestionIndex = 0;
@@ -42,7 +126,7 @@ function checkAnswer(event) {
         const currentQuestion = questions[currentQuestionIndex];
     
         if (selectedOption === currentQuestion.answer) {
-            showResult("Chocolate time, good job Süßmaus")
+            showResult("Candy time, good job Süßmaus")
             setTimeout(() => {
                 currentQuestionIndex++;
                 if (currentQuestionIndex < questions.length) {
